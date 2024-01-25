@@ -9,6 +9,7 @@ body {
   overflow-x: hidden;
   background: #eef2f7;
 }
+
 a,
 span,
 a:hover,
@@ -110,11 +111,12 @@ section {
 .nice-select .option.selected.focus {
   color: #008bff;
 }
+
 .property_Details_Form_Field {
   border-radius: 8px;
   border: 1px solid var(--Background, #eef2f7);
   background: var(--White, #fff);
-  font-size: 0.8rem;
+  font-size: 0.938rem;
   /* Shadow/xs */
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
@@ -519,6 +521,7 @@ i.fa-solid.fa-xmark {
   width: 100%;
   margin-bottom: 30px;
 }
+
 .logo img {
   max-width: 250px;
 }
@@ -782,11 +785,7 @@ i.fa-brands.fa-airbnb {
   transition: transform 0.15s ease;
 }
 
-.sb-sidenav
-  .sb-sidenav-menu
-  .nav
-  .nav-link.collapsed
-  .sb-sidenav-collapse-arrow {
+.sb-sidenav .sb-sidenav-menu .nav .nav-link.collapsed .sb-sidenav-collapse-arrow {
   transform: rotate(-90deg);
 }
 
@@ -891,17 +890,17 @@ i.fa-brands.fa-airbnb {
   padding: 0;
 }
 
-.datatable-top > nav:first-child,
-.datatable-top > div:first-child,
-.datatable-bottom > nav:first-child,
-.datatable-bottom > div:first-child {
+.datatable-top>nav:first-child,
+.datatable-top>div:first-child,
+.datatable-bottom>nav:first-child,
+.datatable-bottom>div:first-child {
   float: left;
 }
 
-.datatable-top > nav:last-child,
-.datatable-top > div:last-child,
-.datatable-bottom > nav:last-child,
-.datatable-bottom > div:last-child {
+.datatable-top>nav:last-child,
+.datatable-top>div:last-child,
+.datatable-bottom>nav:last-child,
+.datatable-bottom>div:last-child {
   float: right;
 }
 
@@ -1050,21 +1049,27 @@ a.bg-dark {
   transition: width 0.5s;
   max-width: 300px;
 }
+
 .amountPercentage {
   color: gray !important;
 }
+
 .str-setupCost {
   padding-right: 14px;
 }
+
 .percentage_Wrapper {
   position: relative;
 }
+
 .percentage_Wrapper input {
   padding-right: 20px;
 }
+
 .percentage_Wrapper label {
   z-index: 2;
 }
+
 .percentage_Symbole {
   position: absolute;
   top: 6px;
@@ -1163,30 +1168,15 @@ a.bg-dark {
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 0 0 1px rgba(68, 68, 68, 0.11);
+  z-index: -1;
 }
 
 .custom-select.opened .custom-options {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
-
+  z-index: 80;
   transform: translateY(0);
-}
-
-.custom-options:before {
-  position: absolute;
-  display: block;
-  content: '';
-  bottom: 100%;
-  right: 25px;
-  width: 7px;
-  height: 7px;
-  margin-bottom: -4px;
-  border-top: 1px solid #b5b5b5;
-  border-left: 1px solid #b5b5b5;
-  background: #fff;
-  transform: rotate(45deg);
-  transition: all .4s ease-in-out;
 }
 
 .option-hover:before {
@@ -1229,3 +1219,5 @@ a.bg-dark {
   align-items: center;
   flex: none !important;
 }
+
+
